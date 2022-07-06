@@ -1,0 +1,110 @@
+@import 'nullstyle.scss';
+
+/*--------------------ШРИФТЫ-------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap');
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('../../fonts/HelveticaNeueRegular.eot');
+	src: local('☺'), url('../../fonts/HelveticaNeueRegular.woff') format('woff'), url('../../fonts/HelveticaNeueRegular.ttf') format('truetype'), url('../../fonts/HelveticaNeueRegular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('../../fonts/HelveticaNeueMedium.eot');
+	src: local('☺'), url('../../fonts/HelveticaNeueMedium.woff') format('woff'), url('../../fonts/HelveticaNeueMedium.ttf') format('truetype'), url('../../fonts/HelveticaNeueMedium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('../../fonts/HelveticaNeueBold.eot');
+	src: local('☺'), url('../../fonts/HelveticaNeueBold.woff') format('woff'), url('../../fonts/HelveticaNeueBold.ttf') format('truetype'), url('../../fonts/HelveticaNeueBold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/*--------------ОБЩИЕ КЛАССЫ---------------*/
+
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #5c5c5c;
+}
+
+._container {
+	max-width: 1020px;
+	padding: 0 40px;
+	margin: 0 auto;
+}
+
+.red-back {
+	display: inline-block;
+	color: white;
+	padding: 10px;
+	background-color: #ea5a4b;
+}
+
+
+/*--------------HEADER--------------*/
+
+.header {
+	&__container {}
+	&__society {}
+	&__body {}
+	&__main-icon {}
+	&__menu {}
+}
+.society-header {
+	height: 47px;
+	background-color: #1c1c1c;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	&__container {
+		width: 100%;
+	}
+	&__body {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__row {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		width: 120px;
+	}
+	&__item {}
+}
+.icon-main {
+	font-family: 'Bitter', serif;
+	font-size: 24px;
+	line-height: 16px;
+	font-weight: 700;
+	&__i {
+		display: inline-block;
+		color: white;
+		padding: 7px 13px;
+		background-color: #ea5a4b;
+	}
+	&__text {
+		display: inline-block;
+		span {
+			color: #ea5a4b;
+		}
+	}
+}
+.menu-header {
+	&__body {}
+	&__item {}
+}
+.burger {
+	display: none;
+}
