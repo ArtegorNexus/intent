@@ -724,6 +724,7 @@ a.red-back {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 -9px;
 }
 .portfolio__item {
   -webkit-box-flex: 0;
@@ -731,19 +732,8 @@ a.red-back {
           flex: 0 1 206px;
   height: 120px;
   position: relative;
-  margin-right: 18px;
+  padding: 0 9px;
   margin-bottom: 20px;
-}
-.portfolio__item:nth-child(4n) {
-  margin-right: 0;
-}
-@media (max-width: 1015px) {
-  .portfolio__item:nth-child(4n) {
-    margin-right: 18px;
-  }
-  .portfolio__item:nth-child(3n) {
-    margin-right: 18px;
-  }
 }
 .portfolio__item img {
   width: 100%;
@@ -758,8 +748,8 @@ a.red-back {
   transition: all 0.3s ease 0s;
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 9px;
+  width: 188px;
   padding: 10px;
   opacity: 0;
   color: white;
